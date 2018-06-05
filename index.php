@@ -269,7 +269,11 @@
       
 
       <p>As for item type, you have an equal chance to roll any type.</p>
-    
+      <p>When you discard an old (lower value) item, it is dropped on the map 
+      at your current location and its value slowly decreases until it reaches zero 
+      and disappears. Another player who reaches the location on the map where the 
+      item was dropped keeps the best items from his inventory and the ones lying around.
+      </p>
 
 
     <h2>Battle</h2>
