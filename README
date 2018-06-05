@@ -1,3 +1,11 @@
+IdleRPG-Themable-Site
+
+Modified IdleRPG-Site to work with IdleRPG-Themable.
+
+ToDo:
+Dark Mode
+Make item names be read dynamically from IdleRPG-Themable items.txt theme files.
+
 ------------------------------------------
 IRPG Website Code README v1.1 (2004-06-27)
 ------------------------------------------
