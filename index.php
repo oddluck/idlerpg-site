@@ -106,6 +106,40 @@
       follow, so the stats for this feature may change in the future.</p>
     
     
+
+<h2>Changing Your Gender</h2>
+
+<p>To change your gender, simply:</p>
+	
+	<code> 
+	/msg <?php echo $irpg_bot;?> GENDER [m/f/n/pc/u]
+	</code>
+    	
+	<p>This is a p0 (see <a href="#penalties">Penalties</a>) command.</p>
+	<p>m=male, f=female, n=neuter (such as inanimate objects), pc=politically correct, u=unknown(default). These will affect the pronouns used in messages from the bot. No effect on gameplay at all (presently, that is).</p>
+
+<h2>Changing Your Class</h2>
+	
+<p>To change your class, simply:</p>
+	
+	<code>
+	/msg <?php echo $irpg_bot;?> NEWCLASS [class description]
+	</code>
+   	
+	<p>This is a p0 (see <a href="#penalties">Penalties</a>) command.</p>
+	<p> If you're not happy with the class you registered with, then you may change it.</p>
+
+<h2>List Inventory Contents</h2>
+	
+	<p>To list inventory contents, simply:</p>
+	
+	<code>
+	/msg <?php echo $irpg_bot;?> INVENTORY
+	</code>
+   	
+	<p>This is a p0 (see <a href="#penalties">Penalties</a>) command.</p>
+	<p> Lists all your items</p> 
+
     <a name="info"></a><h2>Obtaining Bot Info</h2>
     
       <p>To see some simple information on the bot, simply:</p>
@@ -294,6 +328,15 @@
       
       <p>Also as of version 3.0, a successful battle may result an item being
       <a href="#stealing">stolen</a>.</p>
+
+
+<h2>Wars</h2>
+
+     <p>A war occurs about 7 times a fortnight. The map is split into four quadrants and the item
+     values of all players in each quadrant are summed up. Then each quadrant challenges both of its
+     direct neighbors according to the rules of normal challenges. If a quadrant defeats both neighbors,
+     the TTL of every player in that quadrant is halved. If it loses both challenges, the TTLs are doubled.
+     If neither of these cases occur, the TTLs are kept the same.</p>
     
     
     <a name="uniqueitems"></a><h2>Unique Items</h2>
@@ -309,49 +352,49 @@
           <th>Chance to Roll</th>
         </tr>
         <tr>
-          <th>Mattt's Omniscience Grand Crown</th>
+          <th>Omniscience Grand Crown</th>
           <td>50-74</td>
           <td>25 or greater</td>
           <td>1 / 40</td>
         </tr>
         <tr>
-          <th>Juliet's Glorious Ring of Sparkliness</th>
+          <th>Glorious Ring of Sparkliness</th>
           <td>50-74</td>
           <td>25 or greater</td>
           <td>1 / 40</td>
         </tr>
         <tr>
-          <th>Res0's Protectorate Plate Mail</th>
+          <th>Protectorate Plate Mail</th>
           <td>75-99</td>
           <td>30 or greater</td>
           <td>1 / 40</td>
         </tr>
         <tr>
-          <th>Dwyn's Storm Magic Amulet</th>
+          <th>Storm Magic Amulet</th>
           <td>100-124</td>
           <td>35 or greater</td>
           <td>1 / 40</td>
         </tr>
         <tr>
-          <th>Jotun's Fury Colossal Sword</th>
+          <th>Fury Colossal Sword</th>
           <td>150-174</td>
           <td>40 or greater</td>
           <td>1 / 40</td>
         </tr>
         <tr>
-          <th>Drdink's Cane of Blind Rage</th>
+          <th>Cane of Blind Rage</th>
           <td>175-200</td>
           <td>45 or greater</td>
           <td>1 / 40</td>
         </tr>
         <tr>
-          <th>Mrquick's Magical Boots of Swiftness</th>
+          <th>Magical Boots of Swiftness</th>
           <td>250-300</td>
           <td>48 or greater</td>
           <td>1 / 40</td>
         </tr>
         <tr>
-          <th>Jeff's Cluehammer of Doom</th>
+          <th>Cluehammer of Doom</th>
           <td>300-350</td>
           <td>52 or greater</td>
           <td>1 / 40</td>
@@ -476,4 +519,3 @@
     
 
 <?php include("footer.php");?>
-
