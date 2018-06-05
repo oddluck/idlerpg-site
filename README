@@ -1,6 +1,7 @@
 IdleRPG-Themable-Site
 
-Modified IdleRPG-Site to work with IdleRPG-Themable
+Modified IdleRPG-Site to work with IdleRPG-Themable 
+(This means it will no wonger work properly with vanilla IdleRPG, only IdleRPG-Themable)
 Added IdleRPG-Themable commands to index
 Added IdleRPG-Themable admin commands to admincomms.txt
 Added 'War Report' page
