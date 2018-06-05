@@ -6,7 +6,7 @@
 ?>
 
   <h2>Pick a player to view</h2>
-  <p class="small">[gray=offline]</p>
+  <p class="small">[red=offline]</p>
   <ol>
 <?php
     $file = file($irpg_db);
@@ -27,9 +27,6 @@
     }
 ?>
   </ol>
-  <p>For a script to view player stats from a terminal, try <a
-  href="idlerpg-adv.txt">this</a> perl script by
-  <a href="mailto:daxxar@mental.mine.nu">daxxar</a>.</p>
 
   <p>See player stats in <a href="db.php">table format</a>.</p>
 
