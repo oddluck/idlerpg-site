@@ -16,6 +16,9 @@
             height: 500px;
             background-image: url(newmap.png);
         }
+	a.offline {
+	    color: red !important;
+	}
         /*.container {
             padding-top: 10px;
         }*/
@@ -39,8 +42,11 @@
                     <li class="nav-item<?php if ($BASEURL . 'worldmap.php' == $_SERVER['PHP_SELF']) { echo " active";}?>">
                         <a class="nav-link" href="<?php echo $BASEURL; ?>worldmap.php">World Map</a>
                     </li>
+		    <li class="nav-item<?php if ($BASEURL . 'wars.php' == $_SERVER['PHP_SELF']) { echo " active";}?>">
+                        <a class="nav-link" href="<?php echo $BASEURL; ?>wars.php">War Report</a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/adamus1red/idlerpg-site/">Site Source</a>
+                        <a class="nav-link" href="https://github.com/oddluck/">Site/Bot Source</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav pull-right">
