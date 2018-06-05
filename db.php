@@ -179,6 +179,7 @@
              <img src="down.png" border="0">
           </a>)
         </th>
+	<th NOWRAP>Gender</th>
       </tr>
 <?php
     foreach ($file as $line) {
@@ -191,18 +192,19 @@
            $pen['quest'],
            $pen['logout'],
            $created,
-           $lastlogin,
+           $lastlogin,,
+           $item['ring'],
            $item['amulet'],
            $item['charm'],
-           $item['helm'],
-           $item['boots'],
-           $item['gloves'],
-           $item['ring'],
-           $item['leggings'],
-           $item['shield'],
-           $item['tunic'],
            $item['weapon'],
+           $item['helm'],
+           $item['tunic'],
+           $item['gloves'],
+           $item['shield'],
+           $item['leggings'],
+           $item['boots'],,
            $alignment,
+	   $gender,
           ) = explode("\t",trim($line));
       $class = str_replace("<","&lt;",$class);
       $user = str_replace("<","&lt;",$user);
@@ -245,13 +247,13 @@
            "        <td>".$item['weapon']."</td>\n".
            "        <td>$sum</td>\n".
            "        <td>".($alignment=='e'?"Evil":($alignment=='n'?"Neutral":"Good"))."</td>\n".
+	   "        <td>".($gender=='m'?"Male":($gender=='n'?"Neuter":($gender=='f'?"Female":($gender=='pc'?"Politically Correct":"Unknown"))))."</td>\n".
            "      </tr>\n";
     }
-
+    
     echo('
     </table>
     <br><br>
-    * Accounts created before Aug 29, 2003 may have incowrect data fields.
     ');
     include("footer.php");
 ?>
