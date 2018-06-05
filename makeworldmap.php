@@ -23,15 +23,14 @@
         list(,,,,,,,,$online,,$x,$y) = explode("\t",trim($line));
         if ($online == 1) $color = $blue;
         else $color = $red;
-        imageLine($map, $x-$crosssize, $y, $x+$crosssize, $y, $color);
-        imageLine($map, $x, $y-$crosssize, $x, $y+$crosssize, $color);
+        imageFilledEllipse($map, $x, $y, 8, 8, $color);
     }
     while ($line=fgets($itemfile,1024)) {
-        list($x,$y,,$level) = explode("\t",trim($line));
+        list($xy,,$level) = explode("\t",trim($line));
+	list($x,$y) = explode(':',$xy);
         if (is_numeric($level)) $color = $orange;
         else $color = $yellow;
-        imageLine($map, $x-$crosssize, $y-$crosssize, $x+$crosssize, $y+$crosssize, $color);
-        imageLine($map, $x+$crosssize, $y-$crosssize, $x-$crosssize, $y+$crosssize, $color);
+        imageFilledEllipse($map, $x, $y, 6, 6, $color);
     }
     header("Content-type: image/png");
     imagePNG($map);
