@@ -9,7 +9,7 @@
 
 
 <div id="map">
-    <img src="makeworldmap.php" alt="IdleRPG World Map" title="IdleRPG World Map" usemap="#world" border="0" />
+    <img src="makeworldmap.php" usemap="#world" border="0" />
     <map id="world" name="world">
 <?php
     $file = fopen($irpg_db,"r");
@@ -22,9 +22,10 @@
               "\" href=\"playerview.php?player=".urlencode($who)."\" title=\"".htmlentities($who)."\" />\n";
     }
     while ($line=fgets($itemfile,1024)) {
-        list($x,$y,$type,$level) = explode("\t",trim($line));
-        print "        <area shape=\"circle\" coords=\"".$x.",".$y.",".$crosssize."\" alt=\"".htmlentities($type." [".$level."]").
-              "\" title=\"".htmlentities($type." [".$level."]")."\" />\n";
+        list($xy,$type,$level) = explode("\t",trim($line));
+	list($x,$y) = explode(':',$xy);
+		print "        <area shape=\"circle\" coords=\"".$x.",".$y.",".$crosssize."\" alt=\"".htmlentities($type." [".$level."]").
+              "\" title=\"".htmlentities(($type=='0'?"Ring":($type=='1'?"Amulet":($type=='2'?"Charm":($type=='3'?"Weapon":($type=='4'?"Helm":($type=='5'?"Tunic":($type=='6'?"Gloves":($type=='7'?"Shield":($type=='8'?"Leggings":"Boots")))))))))." [".$level."]")."\" />\n";
     }
     fclose($file);
 ?>
