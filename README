@@ -1,7 +1,9 @@
 IdleRPG-Themable-Site
 
 Modified IdleRPG-Site to work with IdleRPG-Themable
-Added 'War Report'
+Added IdleRPG-Themable commands to index
+Added IdleRPG-Themable admin commands to admincomms.txt
+Added 'War Report' page
 
 ToDo:
 Dark Mode
