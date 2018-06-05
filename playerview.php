@@ -1,3 +1,4 @@
+
 <?php
     include("config.php");
 
@@ -29,18 +30,19 @@
                  $pen['quest'],
                  $pen['logout'],
                  $created,
-                 $lastlogin,
+                 $lastlogin,,
+                 $item['ring'],
                  $item['amulet'],
                  $item['charm'],
-                 $item['helm'],
-                 $item['boots'],
-                 $item['gloves'],
-                 $item['ring'],
-                 $item['leggings'],
-                 $item['shield'],
-                 $item['tunic'],
                  $item['weapon'],
+                 $item['helm'],
+                 $item['tunic'],
+                 $item['gloves'],
+                 $item['shield'],
+                 $item['leggings'],
+                 $item['boots'],,
                  $alignment,
+		 $gender
             ) = explode("\t",trim($line));
             $found=1;
             break;
@@ -52,6 +54,7 @@
         /* if we htmlentities($user), then we cannot use links with it. */
         echo "      <p><b>User:</b> ".htmlentities($user)."<br />\n".
              "      <b>Class:</b> $class<br />\n".
+             "      <b>Gender:</b> ".($gender=='m'?"Male":($gender=='n'?"Neuter":($gender=='f'?"Female":($gender=='pc'?"Politically Correct":"Unknown"))))."<br />\n".
              "      <b>Admin?:</b> ".($isadmin?"Yes":"No")."<br />\n".
              "      <b>Level:</b> $level<br />\n".
              "      <b>Next level:</b> ".duration($secs)."<br />\n".
@@ -71,28 +74,28 @@
         foreach ($item as $key => $val) {
             $uniquecolor="#be9256";
             if ($key == "helm" && substr($val,-1,1) == "a") {
-                $val = intval($val)." [<font color=\"$uniquecolor\">Mattt's Omniscience Grand Crown</font>]";
+                $val = intval($val)." [<font color=\"$uniquecolor\">Omniscience Grand Crown</font>]";
             }
             if ($key == "tunic" && substr($val,-1,1) == "b") {
-                $val = intval($val)." [<font color=\"$uniquecolor\">Res0's Protectorate Plate Mail</font>]";
+                $val = intval($val)." [<font color=\"$uniquecolor\">Protectorate Plate Mail</font>]";
             }
             if ($key == "amulet" && substr($val,-1,1) == "c") {
-                $val = intval($val)." [<font color=\"$uniquecolor\">Dwyn's Storm Magic Amulet</font>]";
+                $val = intval($val)." [<font color=\"$uniquecolor\">Storm Magic Amulet</font>]";
             }
             if ($key == "weapon" && substr($val,-1,1) == "d") {
-                $val = intval($val)." [<font color=\"$uniquecolor\">Jotun's Fury Colossal Sword</font>]";
+                $val = intval($val)." [<font color=\"$uniquecolor\">Fury Colossal Sword</font>]";
             }
             if ($key == "weapon" && substr($val,-1,1) == "e") {
-                $val = intval($val)." [<font color=\"$uniquecolor\">Drdink's Cane of Blind Rage</font>]";
+                $val = intval($val)." [<font color=\"$uniquecolor\">Cane of Blind Rage</font>]";
             }
             if ($key == "boots" && substr($val,-1,1) == "f") {
-                $val = intval($val)." [<font color=\"$uniquecolor\">Mrquick's Magical Boots of Swiftness</font>]";
+                $val = intval($val)." [<font color=\"$uniquecolor\">Magical Boots of Swiftness</font>]";
             }
             if ($key == "weapon" && substr($val,-1,1) == "g") {
-                $val = intval($val)." [<font color=\"$uniquecolor\">Jeff's Cluehammer of Doom</font>]";
+                $val = intval($val)." [<font color=\"$uniquecolor\">Cluehammer of Doom</font>]";
             }
             if ($key == "ring" && substr($val,-1,1) == "h") {
-                $val = intval($val)." [<font color=\"$uniquecolor\">Juliet's Glorious Ring of Sparkliness</font>]";
+                $val = intval($val)." [<font color=\"$uniquecolor\">Glorious Ring of Sparkliness</font>]";
             }
             echo "      $key: $val<br />\n";
             $sum += $val;
@@ -153,4 +156,3 @@
     }
     include("footer.php");
 ?>
-
