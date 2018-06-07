@@ -11,7 +11,23 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-GHW2S7IZAQe8+YkyL99LyDj1zdWXSPOG+JZafCtKiSc= sha512-vxM32w6T7zJ83xOQ6FT4CEFnlasqmkcB0+ojgbI0N6ZtSxYvHmT7sX2icN07TqEqr5wdKwoLkmB8sAsGAjCJHg==" crossorigin="anonymous">
         <!--<link rel="stylesheet" type="text/css" href="g7.css" />-->
         <style type="text/css">
-        #map {
+        body {
+	    color: #D3D3D3 !important;
+	    background-color: #000 !important;
+	}
+	.bg-faded {
+	    background-color: grey;
+	}
+	.nav-link {
+	    color: #fff !important;
+	}
+	.nav-item.active a {
+	    color: #000 !important;
+	}
+	code {
+	    background-color: #D3D3D3 !important;
+	}
+	#map {
             width: 500px;
             height: 500px;
             background-image: url(newmap.png);
@@ -46,7 +62,7 @@
                         <a class="nav-link" href="<?php echo $BASEURL; ?>wars.php">War Report</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/oddluck/">Site/Bot Source</a>
+                        <a class="nav-link" href="https://github.com/oddluck/">Bot/Site Source</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav pull-right">
