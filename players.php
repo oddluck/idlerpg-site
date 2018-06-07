@@ -6,7 +6,7 @@
 ?>
 
   <h2>Pick a player to view</h2>
-  <p class="small">[red=offline]</p>
+  <p class="small">[<font color="red">red</font>=offline]</p>
   <ol>
 <?php
     $file = file($irpg_db);
