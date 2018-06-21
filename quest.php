@@ -58,7 +58,7 @@
         echo "        <p>Sorry, there is no active quest.</p>\n";
     }
     else {
-        echo "        <p><b>Quest:</b> To $text.</p>\n";
+        echo "        <p><b>Quest:</b> $text.</p>\n";
         if ($type == 1) {
             echo "        <p><b>Time to completion:</b> ".duration($time-time()).
                  "</p>\n";
@@ -98,7 +98,7 @@
         if ($type == 2) {
              echo "        <b>Position:</b> [".$player[4]['x'].",".$player[4]['y']."]</p>\n".
                   "        <h2>Quest Map:</h2>\n".
-                  "        <p>[Questers are shown in blue, current goal in red]</p>\n".
+                  "        <p>[Questers are shown in <font color=\"blue\">blue</font>, current goal in <font color=\"red\">red</font>]</p>\n".
                   "        <div id=\"map\"><img src=\"makequestmap.php\" alt=\"Idle RPG Quest Map\" usemap=\"#quest\" border=\"0\" /></div>\n".
                   "        <map id=\"quest\" name=\"quest\">\n".
                   "            <area shape=\"circle\" coords=\"".$player[1]['x'].",".$player[1]['y'].",6\" alt=\"".htmlentities($player[1]['name']).
