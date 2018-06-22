@@ -5,7 +5,7 @@
 ?>
 
 <h1>World Map</h1>
-<p>[offline users are red, online users are blue, normal items are orange, unique items are yellow]</p>
+<p>[offline users are <font color="red">red</font>, online users are <font color="blue">blue</font>, normal items are <font color="orange">orange</font>, unique items are <font color="green">green</font>]</p>
 
 
 <div id="map">
@@ -31,5 +31,5 @@
 ?>
     </map>
 </div>
-
-<?include("footer.php");?>
+<br></br>
+<?php include("footer.php");?>
