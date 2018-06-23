@@ -1,6 +1,6 @@
         </div>
         <div class="footer">
-            <p class="small">Questions? Comments? Suggestions? Bugs? <a href="contact.php"><?php print $admin_email?></a> or <?php print $admin_nick?>@irc.tv-vault.me/#IdleRPub <?php
+            <p class="small">Questions? Comments? Suggestions? Bugs? <a href="contact.php"><?php print $admin_email?></a> or <?php print $admin_nick?>@ <?php
             $hits = file("hits.db");
             $fp = fopen("hits.db", "w");
             $thispage = explode("/",$_SERVER['PHP_SELF']);
