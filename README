@@ -4,10 +4,10 @@ Modified IdleRPG-Site to work with IdleRPG-Themable
 (This means it will no longer work properly with vanilla IdleRPG, only IdleRPG-Themable)
 Added IdleRPG-Themable commands to index
 Added IdleRPG-Themable admin commands to admincomms.txt
-Added 'War Report' page
+Dark Theme
 
 ToDo:
-Dark Mode
+'War Report' page
 Make item names be read dynamically from IdleRPG-Themable items.txt theme files.
 
 ------------------------------------------
