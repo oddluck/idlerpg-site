@@ -58,12 +58,9 @@
                     <li class="nav-item<?php if ($BASEURL . 'worldmap.php' == $_SERVER['PHP_SELF']) { echo " active";}?>">
                         <a class="nav-link" href="<?php echo $BASEURL; ?>worldmap.php">World Map</a>
                     </li>
-		    <li class="nav-item<?php if ($BASEURL . 'wars.php' == $_SERVER['PHP_SELF']) { echo " active";}?>">
-                        <a class="nav-link" href="<?php echo $BASEURL; ?>wars.php">War Report</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://github.com/oddluck/">Bot/Site Source</a>
-                    </li>
+                    </li> 
                 </ul>
                 <ul class="nav navbar-nav pull-right">
                     <li class="nav-item<?php if ($BASEURL . 'contact.php' == $_SERVER['PHP_SELF']) { echo " cactive";}?>">
