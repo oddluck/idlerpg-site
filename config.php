@@ -43,4 +43,7 @@ $mapy = 500;
 // size of crosses for players and items on world map
 $crosssize = 3;
 
+// site start date
+$start_date="06/02/2018";
+
 ?>
