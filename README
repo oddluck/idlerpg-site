@@ -2,6 +2,8 @@ IdleRPG Sitecode for IdleRPG-Themable https://github.com/oddluck/idlerpg-themabl
 forked from https://github.com/adamus1red/idlerpg-site
 which is a fork of the original IdleRPG site by http://idlerpg.net/
 
+Currently this site will only show correct item names for the default idelrpg-themable theme.
+
 Modified IdleRPG-Site to work with IdleRPG-Themable https://github.com/oddluck/idlerpg-themable
 (This means it will no longer work properly with vanilla IdleRPG, only IdleRPG-Themable)
 Added IdleRPG-Themable commands to index
