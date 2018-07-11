@@ -12,7 +12,7 @@
                 list($page,$numhits,$date) = explode("\t",trim($line));
                 if ($page == $thispage) {
                     ++$numhits;
-                    echo "            $numhits hits since June 02, 2018";
+                    echo "            $numhits hits since $start_date";
                     $found = 1;
                 }
                 if ($fp) {
