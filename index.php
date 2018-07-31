@@ -374,7 +374,7 @@
           <td>1 / 40</td>
         </tr>
         <tr>
-          <th>Storm Magic Amulet</th>
+          <th>Storm Magic Charm</th>
           <td>100-124</td>
           <td>35 or greater</td>
           <td>1 / 40</td>
