@@ -79,8 +79,8 @@
             if ($key == "tunic" && substr($val,-1,1) == "b") {
                 $val = intval($val)." [<font color=\"$uniquecolor\">Protectorate Plate Mail</font>]";
             }
-            if ($key == "amulet" && substr($val,-1,1) == "c") {
-                $val = intval($val)." [<font color=\"$uniquecolor\">Storm Magic Amulet</font>]";
+            if ($key == "charm" && substr($val,-1,1) == "c") {
+                $val = intval($val)." [<font color=\"$uniquecolor\">Storm Magic Charm</font>]";
             }
             if ($key == "weapon" && substr($val,-1,1) == "d") {
                 $val = intval($val)." [<font color=\"$uniquecolor\">Fury Colossal Sword</font>]";
